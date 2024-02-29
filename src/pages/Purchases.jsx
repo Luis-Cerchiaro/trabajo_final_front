@@ -64,7 +64,7 @@ const Purchases = () => {
               </td>
               <td>
                 <span className="text-bold text-success">
-                  ${purchase.product?.price}
+                  ${purchase.product?.price * purchase.quantity} 
                 </span>
               </td>
             </tr>
