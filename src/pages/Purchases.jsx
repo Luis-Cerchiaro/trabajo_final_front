@@ -36,6 +36,7 @@ const Purchases = () => {
             <th>purchase date</th>
             <th>quantity</th>
             <th>Price</th>
+            <th>Total</th>
           </tr>
         </thead>
         <tbody>
@@ -60,6 +61,11 @@ const Purchases = () => {
               <td>
                 <span className="border border-light py-2 px-4">
                   {purchase.quantity}
+                </span>
+              </td>
+              <td>
+                <span className="text-bold text-success">
+                  ${purchase.product?.price} 
                 </span>
               </td>
               <td>
